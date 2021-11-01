@@ -32,9 +32,7 @@ namespace My_hometask_2
             return $"Usage power is {UsagePower}, is switched on {SwitchOn}, name of device is {DeviceType}";
         }
 
-
-
-        public int getPower()
+          public int getPower()
         {
             return UsagePower;
         }
