@@ -13,28 +13,18 @@ namespace My_hometask_2
     {
         static void Main(string[] args)
         {
-         Device[] listOfDevices = new Device[6];
-                        
-
-            listOfDevices[0] = new Device(25, true,  DeviceType.Iron);
-            listOfDevices[1] = new Device(150, true, DeviceType.Refrigerator);
-            listOfDevices[2] = new Device(101, true, DeviceType.Microwave);
-            listOfDevices[3] = new Device(250, true, DeviceType.Conditioner);
-            listOfDevices[4] = new Device(100, true, DeviceType.TVSet);
-            listOfDevices[5] = new Device(65, false, DeviceType.Computer);
-
-         var sortedListOfDevices = listOfDevices.OrderByDescending(Device => Device.getPower());
-
-          foreach (var item in sortedListOfDevices)
-            {
-                
-                Console.WriteLine(item);
-            }
-           
+            HomeAppliances homeAppliances = new HomeAppliances(
+                new Device[]
+                {
+                  new Device(25, true, DeviceType.Iron),
+                  new Device(150, true, DeviceType.Refrigerator),
+                  new Device(100, true, DeviceType.Microwave),
+                  new Device(250, true, DeviceType.Conditioner),
+                  new Device(1000, true, DeviceType.TVSet),
+                  new Device(650, false, DeviceType.Computer),
+        });
+            homeAppliances.SortByPower(homeAppliances.Devices);
         }
     }
 }
-
-
-
 
