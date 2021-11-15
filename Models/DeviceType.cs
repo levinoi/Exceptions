@@ -14,6 +14,7 @@ namespace My_hometask_2.Models
         Iron,
         Refrigerator,
         Microwave,
-        Computer
+        Computer,
+        Battery
     }
 }

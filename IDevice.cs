@@ -10,7 +10,6 @@ namespace My_hometask_2
     {
         int getPower();
         bool IsSwitched();
-
-
+        string NameOfDeviceType();
     }
 }
